@@ -41,6 +41,9 @@ sudo docker exec -it crackme /bin/bash
 
 별로 특별한게 뜨는건 없다.
 
+![image](https://github.com/user-attachments/assets/371dd8fd-73b1-4682-ac2f-f6e683b57d8a)
+
+웹에서도 당연히 예상했지만 안열린다.
 # mnnm
 
 ```
