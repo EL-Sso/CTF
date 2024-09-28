@@ -122,8 +122,8 @@ def modu(m):
             results.append(n)
     return results
 
-# 
 n_values = modu(m)
 print("Valid n values:", n_values)
 
 ```
+결과 자체가 잘 안나온다.
