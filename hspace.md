@@ -25,12 +25,17 @@ print(salt)
 6873706163657b7d 맞고 이걸 아스키로 바꾸면 
 
 ![image](https://github.com/user-attachments/assets/05240fd0-24d1-4e80-bdbe-27c40431b14d)
+
 hspace{}인데 여기서 무슨 숫자를 입력해야 한다는건지를 잘 모르겠다.
 여기서 뭐 준게 아무것도 없는데 도커파일이 있길래 한번 docker-compose로 올려봤다.
 
+sudo docker-compose up --build
+로 빌드하고
+
 ![image](https://github.com/user-attachments/assets/388c880f-c4df-4304-9033-aac8dff0de25)
 
-아무것도 안뜬다. 컨테이너 내부로 들어가봤는데
+sudo docker exec -it crackme /bin/bash
+로 컨테이너 내부로 들어가봤는데
 
 ![image](https://github.com/user-attachments/assets/695f85ef-9a23-4ee9-ba90-29bdc4c83f1b)
 
