@@ -65,3 +65,52 @@ print(m)
 
 라고 한다.
 
+일단 m값을 알았으니 n을 m의 약수로 대충 잡아보고 코드를 짜서 한번 보겠다.
+
+```
+from Crypto.Util.number import *
+
+flag = "hspace{}"
+m = bytes_to_long(flag.encode())
+
+# n 값을 찾기
+def find_n(m):
+    valid_n = []
+    
+    # m의 약수
+    for n in range(1, m + 1):
+        if m % n == 0:  # n이 m의 약수인지 확인
+            if pow(m, n, n) == m:
+                valid_n.append(n)
+    
+    return valid_n
+
+n_values = find_n(m)
+print("Valid n values:", n_values)
+
+```
+
+아니면 
+![image](https://github.com/user-attachments/assets/1f8238a2-fe90-418d-a06a-d0c923a21baf)
+
+이 성질을 이용해볼까?
+
+```
+from Crypto.Util.number import bytes_to_long
+
+flag = "hspace{}"
+m = bytes_to_long(flag.encode())
+
+def modu(m):
+    results = []
+    for n in range(1, m + 1):
+        m_mod_n = m % n
+        if pow(m_mod_n, n, n) == m:  # (m mod n)^n mod n == m
+            results.append(n)
+    return results
+
+# 
+n_values = modu(m)
+print("Valid n values:", n_values)
+
+```
