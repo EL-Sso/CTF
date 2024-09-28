@@ -21,6 +21,11 @@ print(salt)
 ```
 ![스크린샷 2024-09-28 130113](https://github.com/user-attachments/assets/9fc4bb9a-34a1-4296-bc2f-6fba0db71164)
 
+이걸 10진수->16진수로 바꿔봤다.
+6873706163657b7d 맞고 이걸 아스키로 바꾸면 
+
+![image](https://github.com/user-attachments/assets/05240fd0-24d1-4e80-bdbe-27c40431b14d)
+hspace{}인데 여기서 무슨 숫자를 입력해야 한다는건지를 잘 모르겠다.
 여기서 뭐 준게 아무것도 없는데 도커파일이 있길래 한번 docker-compose로 올려봤다.
 
 ![image](https://github.com/user-attachments/assets/388c880f-c4df-4304-9033-aac8dff0de25)
